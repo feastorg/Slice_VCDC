@@ -3,7 +3,7 @@
   <a href="https://github.com/uwo-fast">
     <img src="https://github.com/uwo-fast/.github/blob/main/branding/FAST%20Logo%20Orange%20on%20White%20Transparent.png" height="100">
   </a>
-  <h2><a href="https://github.com/uwo-fast/Slice_CR10"> Slice CR10 </a></h2>
+  <h2><a href="https://github.com/uwo-fast/Slice_CRXX"> Slice CRXX </a></h2>
   <!-- Labels: -->
   <!-- First row: -->
   <a href="https://github.com/uwo-fast/.github/blob/main/collaborating.md">
@@ -27,23 +27,23 @@
   </a>
   <!-- Second row: -->
   <br>
-  <a href="https://github.com/uwo-fast/Slice_CR10/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/uwo-fast/Slice_CR10" alt="License">
+  <a href="https://github.com/uwo-fast/Slice_CRXX/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/uwo-fast/Slice_CRXX" alt="License">
   </a>
-  <a href="https://github.com/uwo-fast/Slice_CR10">
-    <img src="https://img.shields.io/github/repo-size/uwo-fast/Slice_CR10" alt="Repo Size">
+  <a href="https://github.com/uwo-fast/Slice_CRXX">
+    <img src="https://img.shields.io/github/repo-size/uwo-fast/Slice_CRXX" alt="Repo Size">
   </a>
-  <a href="https://github.com/uwo-fast/Slice_CR10/issues">
-    <img src="https://img.shields.io/github/issues/uwo-fast/Slice_CR10" alt="Issues">
+  <a href="https://github.com/uwo-fast/Slice_CRXX/issues">
+    <img src="https://img.shields.io/github/issues/uwo-fast/Slice_CRXX" alt="Issues">
   </a>
-  <a href="https://github.com/uwo-fast/Slice_CR10/network/members">
-    <img src="https://img.shields.io/github/forks/uwo-fast/Slice_CR10?style=social" alt="Forks">
+  <a href="https://github.com/uwo-fast/Slice_CRXX/network/members">
+    <img src="https://img.shields.io/github/forks/uwo-fast/Slice_CRXX?style=social" alt="Forks">
   </a>
-  <a href="https://github.com/uwo-fast/Slice_CR10/stargazers">
-    <img src="https://img.shields.io/github/stars/uwo-fast/Slice_CR10?style=social" alt="Stars">
+  <a href="https://github.com/uwo-fast/Slice_CRXX/stargazers">
+    <img src="https://img.shields.io/github/stars/uwo-fast/Slice_CRXX?style=social" alt="Stars">
   </a>
   <!-- Short description: -->
-  <h3>10A Current Reader Slice for BREAD.</h3>
+  <h3>10A, 20A, or 40A Current Reader Slice for BREAD.</h3>
 </div>
 
 
