@@ -8231,8 +8231,8 @@
 			)
 		)
 	)
-	(gr_text "BREAD Slice\nTemplate\nSLC_TEMP\n<version> <year>"
-		(at 126.066 104.035 270)
+	(gr_text "BREAD Slice\nCurrent Reader\n(SLC_CRXX)\nCam K Brooks\nrev.A [09-2024]"
+		(at 127.172 103.224 270)
 		(layer "F.SilkS")
 		(uuid "5abfd3cf-8b82-409d-b0dd-ab0b45a460bd")
 		(effects
@@ -8250,17 +8250,6 @@
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "10/20/40A Current Slice\nSLC_CRxx\nR0 2024"
-		(at 142.7 44.8 0)
-		(layer "F.SilkS")
-		(uuid "8a9d77ee-76b0-42a5-bc4c-90885e3367d9")
-		(effects
-			(font
-				(size 1 1)
 				(thickness 0.15)
 			)
 		)
