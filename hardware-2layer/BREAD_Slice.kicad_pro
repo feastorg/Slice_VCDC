@@ -703,7 +703,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 0,
+      "model_mode": 4,
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
@@ -723,6 +723,14 @@
     [
       "66043bca-a260-4915-9fce-8a51d324c687",
       "Root"
+    ],
+    [
+      "a1865804-4053-4b6c-b725-3b172b655c52",
+      "Isolated Voltage Sensor"
+    ],
+    [
+      "7d381b9c-9d38-42fd-86f2-ccc6e97560d8",
+      "Isolated Voltage Sensor1"
     ]
   ],
   "text_variables": {}
