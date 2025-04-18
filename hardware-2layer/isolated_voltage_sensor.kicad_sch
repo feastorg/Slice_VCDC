@@ -522,15 +522,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Potentiometer_Digital:MCP41100"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Potentiometer_Digital:MCP4161-xxxx-P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -6.35 8.89 0)
+				(at 2.54 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -538,8 +535,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "MCP41100"
-				(at 1.27 8.89 0)
+			(property "Value" "MCP4161-xxxx-P"
+				(at 2.54 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -547,7 +544,34 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22059b.pdf"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Digital Potentiometer, SPI interface, 257 taps, 5/10/50/100 kohm, non-volatile memory"
+				(at 0 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "digipot EE 8-bit 8bit"
 				(at 0 0 0)
 				(effects
 					(font
@@ -556,7 +580,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf"
+			(property "ki_fp_filters" "DIP?8*W7.62mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -565,86 +589,10 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Single Digital Potentiometer, SPI interface, 256 taps, 100 kohm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R POT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MCP41100_0_1"
-				(rectangle
-					(start -6.35 7.62)
-					(end 6.35 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "MCP41100_1_1"
-				(pin passive clock
-					(at -10.16 2.54 0)
-					(length 3.81)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "MCP4161-xxxx-P_0_0"
 				(pin input line
-					(at -10.16 0 0)
-					(length 3.81)
-					(name "SI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input input_low
-					(at -10.16 -2.54 0)
-					(length 3.81)
+					(at -12.7 2.54 0)
+					(length 2.54)
 					(name "~{CS}"
 						(effects
 							(font
@@ -660,10 +608,46 @@
 						)
 					)
 				)
+				(pin input clock
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "SDI/SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 0 10.16 270)
 					(length 2.54)
-					(name "VDD"
+					(name "V_{DD}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -681,7 +665,7 @@
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
-					(name "VSS"
+					(name "V_{SS}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -697,9 +681,9 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 2.54 180)
-					(length 3.81)
-					(name "PA0"
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "P0A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -715,9 +699,9 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 0 180)
-					(length 3.81)
-					(name "PW0"
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "P0W"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -733,9 +717,9 @@
 					)
 				)
 				(pin passive line
-					(at 10.16 -2.54 180)
-					(length 3.81)
-					(name "PB0"
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "P0B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -748,6 +732,80 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(symbol "MCP4161-xxxx-P_0_1"
+				(rectangle
+					(start 2.54 1.27)
+					(end 3.556 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 -1.27) (xy 3.048 -2.54) (xy 5.334 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0.508) (xy 3.556 0) (xy 4.572 -0.508) (xy 4.572 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.572 0) (xy 5.334 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.334 2.54) (xy 3.048 2.54) (xy 3.048 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MCP4161-xxxx-P_1_1"
+				(rectangle
+					(start -10.16 7.62)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -1338,6 +1396,18 @@
 		)
 		(uuid "54ed3fe3-9352-4515-8e9a-466632ee51b3")
 	)
+	(text "100k dig. pot.\n257 tap\nnon-volatile memory"
+		(exclude_from_sim no)
+		(at 147.828 149.606 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+				(thickness 0.0794)
+			)
+			(justify left)
+		)
+		(uuid "58b64670-17c0-4dc1-bc7a-a8e680784a5b")
+	)
 	(text "100k dig. pot."
 		(exclude_from_sim no)
 		(at 174.498 82.804 0)
@@ -1784,7 +1854,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 135.89) (xy 154.94 135.89)
+			(xy 168.91 135.89) (xy 157.48 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1824,7 +1894,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 135.89) (xy 134.62 135.89)
+			(xy 106.68 138.43) (xy 132.08 138.43)
 		)
 		(stroke
 			(width 0.2032)
@@ -2263,7 +2333,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 138.43) (xy 134.62 138.43)
+			(xy 106.68 140.97) (xy 132.08 140.97)
 		)
 		(stroke
 			(width 0.2032)
@@ -2369,7 +2439,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 140.97) (xy 154.94 140.97)
+			(xy 168.91 140.97) (xy 157.48 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2390,7 +2460,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 138.43) (xy 154.94 138.43)
+			(xy 168.91 138.43) (xy 157.48 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2400,7 +2470,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 140.97) (xy 134.62 140.97)
+			(xy 106.68 135.89) (xy 132.08 135.89)
 		)
 		(stroke
 			(width 0.2032)
@@ -2440,7 +2510,7 @@
 		(uuid "302fd37f-52ec-448c-9dcf-c9d22a79b200")
 	)
 	(label "DIG_POT_A"
-		(at 166.37 135.89 180)
+		(at 168.91 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2502,7 +2572,7 @@
 		(uuid "7f7b12ac-7abe-42dd-94c5-1414581c3647")
 	)
 	(label "DIG_POT_W"
-		(at 166.37 138.43 180)
+		(at 168.91 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2533,7 +2603,7 @@
 		(uuid "92cb28d0-cdf2-461d-b08b-5d8a607da036")
 	)
 	(label "DIG_POT_B"
-		(at 166.37 140.97 180)
+		(at 168.91 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2627,7 +2697,7 @@
 	)
 	(hierarchical_label "SPI_SI"
 		(shape input)
-		(at 109.22 138.43 180)
+		(at 106.68 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2638,7 +2708,7 @@
 	)
 	(hierarchical_label "SPI_SCK"
 		(shape input)
-		(at 109.22 135.89 180)
+		(at 106.68 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2649,7 +2719,7 @@
 	)
 	(hierarchical_label "SPI_CS"
 		(shape input)
-		(at 109.22 140.97 180)
+		(at 106.68 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3155,6 +3225,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Potentiometer_Digital:MCP4161-xxxx-P")
+		(at 144.78 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "582e49df-84c3-4fb8-ad7b-e9f58b78f760")
+		(property "Reference" "U10"
+			(at 146.9233 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MCP4161-xxxx-P"
+			(at 146.9233 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 144.78 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/22059b.pdf"
+			(at 144.78 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Digital Potentiometer, SPI interface, 257 taps, 5/10/50/100 kohm, non-volatile memory"
+			(at 144.78 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "479510ea-1b26-49f7-aaf4-24b6be836f3f")
+		)
+		(pin "2"
+			(uuid "ffb008db-dc2d-462d-b697-e71ed18c0d14")
+		)
+		(pin "3"
+			(uuid "dfde6720-7f09-4b43-9f6c-652e393bf443")
+		)
+		(pin "6"
+			(uuid "6419123f-36d7-4b4c-8f83-426b46e4b1c3")
+		)
+		(pin "4"
+			(uuid "f6a1080b-29c8-4ef7-b082-fcd5a4c591ca")
+		)
+		(pin "7"
+			(uuid "efc9d01f-45c3-49ba-98b6-2941c29887a6")
+		)
+		(pin "8"
+			(uuid "a8a83442-2bb3-402a-82e7-18a8b4fb8857")
+		)
+		(pin "5"
+			(uuid "cfe0f5d7-de36-4c35-a687-dc11630c9f9d")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/7d381b9c-9d38-42fd-86f2-ccc6e97560d8"
+					(reference "U11")
+					(unit 1)
+				)
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/a1865804-4053-4b6c-b725-3b172b655c52"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 194.31 135.89 180)
 		(unit 1)
@@ -3293,98 +3455,6 @@
 				)
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/a1865804-4053-4b6c-b725-3b172b655c52"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Potentiometer_Digital:MCP41100")
-		(at 144.78 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8171f02d-50b8-4c92-ba85-a152d9317cad")
-		(property "Reference" "U4"
-			(at 146.9233 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MCP41100"
-			(at 146.9233 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf"
-			(at 144.78 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single Digital Potentiometer, SPI interface, 256 taps, 100 kohm"
-			(at 144.78 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "29f359f8-8f92-4134-a8b5-7b832d53507e")
-		)
-		(pin "1"
-			(uuid "58e0b842-b682-4d75-baf0-4a7d9fc73a8f")
-		)
-		(pin "8"
-			(uuid "d00edcff-c834-4c07-9475-2618cc2b0d52")
-		)
-		(pin "4"
-			(uuid "879f4bfa-e0fa-4048-b1f3-d85b51d79986")
-		)
-		(pin "5"
-			(uuid "60168e0e-0a09-4baf-a588-84a6197e75a0")
-		)
-		(pin "6"
-			(uuid "4e11040a-5878-43a5-91ee-474e0eb6fbfb")
-		)
-		(pin "3"
-			(uuid "b41a8698-3ae7-49af-8e52-fa492fd63629")
-		)
-		(pin "7"
-			(uuid "2d347c10-2d08-4e13-bbe2-3f744d31b4d9")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687/7d381b9c-9d38-42fd-86f2-ccc6e97560d8"
-					(reference "U6")
-					(unit 1)
-				)
-				(path "/66043bca-a260-4915-9fce-8a51d324c687/a1865804-4053-4b6c-b725-3b172b655c52"
-					(reference "U4")
 					(unit 1)
 				)
 			)
