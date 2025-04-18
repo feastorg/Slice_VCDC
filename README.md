@@ -1,6 +1,6 @@
-# Current Reader Slice
+# Current & Voltage Reader Slice
 
-10A, 20A, or 40A Current Reader Slice for BREAD.
+Current and voltage reader slice for AC and DC supplies.
 
 ## Introduction
 
