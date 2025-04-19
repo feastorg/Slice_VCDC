@@ -634,7 +634,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 109.22) (xy 119.38 114.3)
+			(xy 119.38 111.76) (xy 119.38 114.3)
 		)
 		(stroke
 			(width 0)
@@ -684,7 +684,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 100.33) (xy 119.38 101.6)
+			(xy 119.38 100.33) (xy 119.38 104.14)
 		)
 		(stroke
 			(width 0)
@@ -879,7 +879,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 119.38 105.41 180)
+		(at 119.38 107.95 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -887,7 +887,7 @@
 		(dnp no)
 		(uuid "04256eec-d651-4dd8-8530-de14004e05cb")
 		(property "Reference" "C21"
-			(at 115.062 103.632 0)
+			(at 115.062 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -895,7 +895,7 @@
 			)
 		)
 		(property "Value" "1n"
-			(at 115.062 105.664 0)
+			(at 115.062 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -903,7 +903,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.4148 101.6 0)
+			(at 118.4148 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -912,7 +912,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 105.41 0)
+			(at 119.38 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -921,7 +921,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 119.38 105.41 0)
+			(at 119.38 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
