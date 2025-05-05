@@ -1,9 +1,0 @@
-# Notes
-
-## references
-
--
-
-## parts dump
-
--
