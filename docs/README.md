@@ -28,3 +28,5 @@
 - ACS37800 - Isolated, Programmable AC and DC Power Monitoring IC with I2C or SPI Interface
   - ACS37800KMACTR-030B3-I2C: https://www.digikey.ca/en/products/detail/allegro-microsystems/ACS37800KMACTR-030B3-I2C/13563666
   - https://www.sparkfun.com/sparkx-power-meter-acs37800-qwiic.html
+- Press Fit Terminals
+  - [Phoenix Contact TDPT 4/2-SP-635 ZB (Phoenix Contact)](https://www.phoenixcontact.com/en-us/products/printed-circuit-board-terminal-tdpt-4-2-sp-635-zb-1017521)
