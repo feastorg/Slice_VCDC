@@ -1,0 +1,188 @@
+schema_version: "1.0"
+
+# ── Identity ──────────────────────────────────────────────────────────────────
+id: "slice-vcdc"
+name: "DC Voltage and Current Sensor"
+status: "prototype"
+category: "sensing"
+
+summary: "Isolated DC voltage (AMC1311) and current (ACS724) measurement slice."
+description: null
+
+# ── Versioning ────────────────────────────────────────────────────────────────
+version:
+  hardware: "0.1.0"
+  firmware: "0.1.0"
+  manifest: "0.1.0"
+
+# ── Compatibility ─────────────────────────────────────────────────────────────
+compatibility:
+  slice_spec: ">=0.1.0 <0.2.0"
+  crumbs_protocol: null
+  anolis_provider_api: null
+
+# ── Hardware ──────────────────────────────────────────────────────────────────
+hardware:
+  mcu:
+    type: "dev-board-socket"
+    form_factor: "nano"
+    primary: "ATmega328P"
+    supported:
+      - "ATmega328P"
+  primary_ic:
+    manufacturer: "Allegro MicroSystems"
+    part_number: "ACS724"
+  hw_gen_current: 1
+  hw_gen_supported: [1]
+  pcb:
+    layers: 2
+    thickness: "1.6mm"
+    copper_weight: "1oz"
+    dimensions: "70mm x 100mm"
+  connectors:
+    - ref: "J1"
+      type: "slice-bus-10pin"
+      purpose: "power-and-i2c"
+  mounting:
+    pattern: "slice-standard-v0"
+    hole_size: "M3"
+    inset: "5mm"
+  pcb_color_prototype: null
+  pcb_color_production: null
+  enclosure:
+    supported: false
+    path: null
+
+# ── Electrical ────────────────────────────────────────────────────────────────
+electrical:
+  input_voltage: "12V"
+  logic_voltage: "5V"
+  max_current: null
+  protection: null
+  isolation:
+    present: true
+
+# ── Interfaces ────────────────────────────────────────────────────────────────
+interfaces:
+  host:
+    type: "i2c"
+    address_default: 18
+    address_configurable: false
+  data:
+    inputs:
+      - name: "DC_CURRENT_1"
+        type: "hall-effect-current"
+      - name: "DC_CURRENT_2"
+        type: "hall-effect-current"
+      - name: "DC_CURRENT_3"
+        type: "hall-effect-current"
+      - name: "DC_CURRENT_4"
+        type: "hall-effect-current"
+    outputs: []
+
+# ── Capabilities ──────────────────────────────────────────────────────────────
+capabilities:
+  - id: "dc_current_measurement"
+    channels: 4
+    control_modes: []
+  - id: "dc_voltage_measurement"
+    channels: 1
+    control_modes: []
+
+# ── Firmware ──────────────────────────────────────────────────────────────────
+firmware:
+  language: "C++"
+  framework: "arduino"
+  build_system: "arduino-ide"
+  entry_point: "firmware/CR10.ino"
+  path: "firmware"
+  required: false
+  targets:
+    - "nano"
+  lib_deps:
+    - "Wire"
+    - "SPI"
+  i2c:
+    address_default: 18
+    address_configurable: false
+  libraries:
+    - name: "Wire"
+      purpose: "I2C communication"
+    - name: "SPI"
+      purpose: "SPI bus"
+
+# ── Protocol ──────────────────────────────────────────────────────────────────
+protocol:
+  type: "i2c-register"
+  description: "I2C slave at address 18; returns 4-channel current readings as float unions on request."
+  commands: []
+
+# ── Software ──────────────────────────────────────────────────────────────────
+software: null
+
+# ── Artifacts ─────────────────────────────────────────────────────────────────
+artifacts:
+  schematic: "hardware/BREAD_Slice.kicad_sch"
+  pcb: "hardware/BREAD_Slice.kicad_pcb"
+  firmware: "firmware/CR10.ino"
+  docs: "docs/"
+  bom: "docs/BOM_TEMP.ods"
+  gerbers: null
+  pick_and_place: null
+  datasheets:
+    - "docs/ACS724-Datasheet.pdf"
+    - "docs/ADuM5010.pdf"
+    - "docs/amc1311.pdf"
+
+# ── Manufacturing ─────────────────────────────────────────────────────────────
+manufacturing: null
+
+# ── Validation ────────────────────────────────────────────────────────────────
+validation: null
+
+# ── Safety ────────────────────────────────────────────────────────────────────
+safety:
+  hazards:
+    - "High DC voltage/current on input side"
+  max_safe_voltage: "48VDC"
+  intended_environment: "lab"
+  not_for:
+    - "human safety critical systems"
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+dependencies: null
+
+# ── Relations ─────────────────────────────────────────────────────────────────
+related:
+  supersedes: null
+  superseded_by: null
+  variants: []
+  compatible_slices:
+    - "slice-vcac"
+
+# ── Maintainers ───────────────────────────────────────────────────────────────
+maintainers:
+  - name: "Cameron Brooks"
+    role: "owner"
+
+# ── License ───────────────────────────────────────────────────────────────────
+license:
+  hardware: "CERN-OHL-S-2.0"
+  firmware: "GPL-3.0-only"
+  software: null
+  docs: "CC-BY-4.0"
+
+# ── Repository ────────────────────────────────────────────────────────────────
+repository:
+  url: "https://github.com/feastorg/Slice_VCDC"
+
+# ── Metadata ──────────────────────────────────────────────────────────────────
+metadata:
+  created: "2026-05-19"
+  updated: "2026-05-19"
+  tags:
+    - "power-monitoring"
+    - "dc-voltage"
+    - "dc-current"
+    - "hall-effect"
+    - "isolation"
