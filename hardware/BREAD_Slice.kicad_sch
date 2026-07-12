@@ -6711,7 +6711,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:WS2812-5050-4PIN"
+		(property "Footprint" "KMLib_IC_SMD:WS2812-5050-4PIN"
 			(at 13.97 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -7044,7 +7044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kml-custom:Thermal Pad"
+		(property "Footprint" "KMLib_Mounting:Thermal_Pad"
 			(at 35.8648 97.79 0)
 			(hide yes)
 			(show_name no)
