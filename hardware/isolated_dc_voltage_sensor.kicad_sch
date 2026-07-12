@@ -634,7 +634,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:ADUM5010ARSZ-RL7"
+		(symbol "KMLib_IC_Power:ADUM5010ARSZ-RL7_Isolated_DC-DC"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1132,7 +1132,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:AMC1311BDWVR"
+		(symbol "KMLib_IC_Analog:AMC1311BDWVR_Isolation_Amplifier"
 			(pin_names
 				(offset 0.254)
 			)
@@ -6105,7 +6105,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:AMC1311BDWVR")
+		(lib_id "KMLib_IC_Analog:AMC1311BDWVR_Isolation_Amplifier")
 		(at 156.21 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -6136,7 +6136,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:DWV0008A"
+		(property "Footprint" "KMLib_IC_SMD:DWV0008A"
 			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -6363,7 +6363,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:ADUM5010ARSZ-RL7")
+		(lib_id "KMLib_IC_Power:ADUM5010ARSZ-RL7_Isolated_DC-DC")
 		(at 179.07 36.83 0)
 		(mirror y)
 		(unit 1)
@@ -6394,7 +6394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:RS_20_ADI"
+		(property "Footprint" "KMLib_IC_SMD:RS_20_ADI"
 			(at 179.07 36.83 0)
 			(hide yes)
 			(show_name no)

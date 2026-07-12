@@ -3534,7 +3534,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "kml-custom:DWV0008A"
+	(footprint "KMLib_IC_SMD:DWV0008A"
 		(layer "B.Cu")
 		(uuid "0295e63d-172b-4785-919a-591de47a7f21")
 		(at 146.4145 70.204 180)
@@ -12844,7 +12844,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:RS_20_ADI"
+	(footprint "KMLib_IC_SMD:RS_20_ADI"
 		(layer "B.Cu")
 		(uuid "faff2c0f-20bf-4cba-bb1c-84c79a88dd39")
 		(at 142.42 58.47)
