@@ -720,7 +720,7 @@
 					)
 				)
 			)
-			(symbol "ADUM5010ARSZ-RL7_0_1"
+			(symbol "ADUM5010ARSZ-RL7_Isolated_DC-DC_0_1"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 -27.94)
@@ -1228,7 +1228,7 @@
 					)
 				)
 			)
-			(symbol "AMC1311BDWVR_0_1"
+			(symbol "AMC1311BDWVR_Isolation_Amplifier_0_1"
 				(polyline
 					(pts
 						(xy -15.24 12.7) (xy -15.24 -12.7)
