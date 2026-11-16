@@ -5,7 +5,7 @@
 	(uuid "95cbe335-7170-4318-b643-1e3bb8bb810f")
 	(paper "A4")
 	(lib_symbols
-		(symbol "BREAD_Slice-rescue:GND-power"
+		(symbol "power:GND"
 			(power global)
 			(pin_names
 				(offset 0)
@@ -69,7 +69,7 @@
 					)
 				)
 			)
-			(symbol "GND-power_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -83,7 +83,7 @@
 					)
 				)
 			)
-			(symbol "GND-power_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -1096,7 +1096,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 151.13 115.57 0)
 		(unit 1)
 		(body_style 1)
@@ -1173,7 +1173,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BREAD_Slice-rescue:GND-power")
+		(lib_id "power:GND")
 		(at 138.43 90.17 0)
 		(unit 1)
 		(body_style 1)

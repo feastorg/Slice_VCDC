@@ -7608,7 +7608,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kml-custom:CONN4_2606-1104&slash_010-000_WAG"
+		(property "Footprint" "KMLib_Connectors:2606-1104_010-000_WAGO"
 			(at 168.91 106.68 0)
 			(hide yes)
 			(show_name no)
