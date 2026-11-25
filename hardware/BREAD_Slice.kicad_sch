@@ -5152,7 +5152,7 @@
 		)
 		(uuid "8508a33b-525c-4e09-8187-4d070db79e8c")
 	)
-	(label "IC_CURR1"
+	(label "CURR1"
 		(at 82.55 81.28 0)
 		(effects
 			(font
