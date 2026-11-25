@@ -787,7 +787,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "GNDP"
@@ -841,7 +841,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -10.16 0)
 					(length 7.62)
 					(name "GNDP"
@@ -859,7 +859,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -12.7 0)
 					(length 7.62)
 					(name "GNDP"
@@ -931,7 +931,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 0 -22.86 0)
 					(length 7.62)
 					(name "GNDP"
@@ -949,7 +949,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 45.72 -22.86 180)
 					(length 7.62)
 					(name "GNDISO"
@@ -967,7 +967,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_out line
 					(at 45.72 -20.32 180)
 					(length 7.62)
 					(name "VISO"
@@ -1021,7 +1021,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 45.72 -12.7 180)
 					(length 7.62)
 					(name "GNDISO"
@@ -1039,7 +1039,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 45.72 -10.16 180)
 					(length 7.62)
 					(name "GNDISO"
@@ -1093,7 +1093,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin power_in line
 					(at 45.72 -2.54 180)
 					(length 7.62)
 					(name "GNDISO"
@@ -1443,6 +1443,121 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -4087,6 +4202,83 @@
 			(justify left)
 		)
 		(uuid "b2866e7f-a69b-45ce-afc0-a9f409bf97b7")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 106.68 106.68 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df4da537-3ff0-4e16-b99c-c1ffdd286b30")
+		(property "Reference" "#FLG02"
+			(at 106.68 108.58500000000001 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDISO"
+			(at 106.68 110.49000000000001 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 106.68 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "368ec3db-252d-4399-8a9a-50f24ee902ec")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687/78aa2bdd-0100-4a0d-9a5e-97e57d8c85b9"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV9001IDCK")
