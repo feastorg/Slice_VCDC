@@ -12,6 +12,11 @@ sensor is rated for 4.2 mm creepage, and its primary-side parts (R1, C5, C6, C7)
 sit 1.639 mm from the isolated side's C11. The fix for higher buses is tracked
 in [#2](https://github.com/feastorg/Slice_VCDC/issues/2).
 
+**r1: current sensor up to 10 A continuous.** The path from J2.3/J2.4 through the
+ACS724 is copper on both layers sized for 10 A at a 20 °C rise (IPC-2221, 1 oz).
+The ACS724's full ±50 A range is tracked in
+[#2](https://github.com/feastorg/Slice_VCDC/issues/2).
+
 ## Introduction
 
 [Short introduction on the project.]
