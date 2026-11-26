@@ -4214,7 +4214,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df4da537-3ff0-4e16-b99c-c1ffdd286b30")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG04"
 			(at 106.68 108.58500000000001 0)
 			(hide yes)
 			(show_name no)
@@ -4274,7 +4274,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/78aa2bdd-0100-4a0d-9a5e-97e57d8c85b9"
-					(reference "#FLG02")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
